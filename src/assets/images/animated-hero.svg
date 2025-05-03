@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <!-- Pulse animation for nodes -->
+    <radialGradient id="pulse" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.7">
+        <animate attributeName="stop-opacity" values="0.7;0.3;0.7" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="white" stop-opacity="0">
+        <animate attributeName="stop-opacity" values="0;0.1;0" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </radialGradient>
+    
+    <!-- Animations for connection lines -->
+    <linearGradient id="lineGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0066cc" stop-opacity="0.7">
+        <animate attributeName="offset" values="0;1" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="20%" stop-color="#0066cc" stop-opacity="0.9">
+        <animate attributeName="offset" values="0.2;1.2" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <linearGradient id="lineGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff9900" stop-opacity="0.7">
+        <animate attributeName="offset" values="0;1" dur="2.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="20%" stop-color="#ff9900" stop-opacity="0.9">
+        <animate attributeName="offset" values="0.2;1.2" dur="2.5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <linearGradient id="lineGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00cc66" stop-opacity="0.7">
+        <animate attributeName="offset" values="0;1" dur="3.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="20%" stop-color="#00cc66" stop-opacity="0.9">
+        <animate attributeName="offset" values="0.2;1.2" dur="3.5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background dots -->
+  <g id="background">
+    <circle cx="150" cy="90" r="3" fill="#00cc66">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="250" cy="120" r="3" fill="#ff9900">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="50" r="3" fill="#ffcc00">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="480" cy="120" r="3" fill="#0066cc">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="580" cy="150" r="3" fill="#00cc66">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="350" r="3" fill="#ff9900">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="440" cy="380" r="3" fill="#00cc66">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="520" cy="290" r="3" fill="#0066cc">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Connection lines -->
+  <g id="connections">
+    <!-- Blue connections -->
+    <line x1="400" y1="250" x2="180" y2="100" stroke="url(#lineGradient1)" stroke-width="2">
+      <animate attributeName="stroke-dasharray" values="5,5;10,10;5,5" dur="4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="400" y1="250" x2="530" y2="100" stroke="url(#lineGradient1)" stroke-width="2">
+      <animate attributeName="stroke-dasharray" values="5,5;10,10;5,5" dur="3.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="400" y1="250" x2="530" y2="200" stroke="url(#lineGradient1)" stroke-width="2">
+      <animate attributeName="stroke-dasharray" values="5,5;10,10;5,5" dur="4.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="400" y1="250" x2="350" y2="380" stroke="url(#lineGradient1)" stroke-width="2">
+      <animate attributeName="stroke-dasharray" values="5,5;10,10;5,5" dur="3.8s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- Orange connections -->
+    <line x1="400" y1="250" x2="280" y2="120" stroke="url(#lineGradient2)" stroke-width="2">
+      <animate attributeName="stroke-dasharray" values="5,5;10,10;5,5" dur="3.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="400" y1="250" x2="180" y2="200" stroke="url(#lineGradient2)" stroke-width="2">
+      <animate attributeName="stroke-dasharray" values="5,5;10,10;5,5" dur="4.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="400" y1="250" x2="520" y2="350" stroke="url(#lineGradient2)" stroke-width="2">
+      <animate attributeName="stroke-dasharray" values="5,5;10,10;5,5" dur="3.7s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- Green connections -->
+    <line x1="400" y1="250" x2="150" y2="300" stroke="url(#lineGradient3)" stroke-width="2">
+      <animate attributeName="stroke-dasharray" values="5,5;10,10;5,5" dur="4.1s" repeatCount="indefinite"/>
+    </line>
+    <line x1="400" y1="250" x2="630" y2="280" stroke="url(#lineGradient3)" stroke-width="2">
+      <animate attributeName="stroke-dasharray" values="5,5;10,10;5,5" dur="3.9s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- User nodes -->
+  <g id="nodes">
+    <!-- Central node -->
+    <circle cx="400" cy="250" r="35" fill="#0066cc" stroke="#ffffff" stroke-width="2">
+      <animate attributeName="r" values="35;38;35" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="250" r="45" fill="url(#pulse)" stroke="#0066cc" stroke-width="1" stroke-dasharray="5,5">
+      <animate attributeName="r" values="45;50;45" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="250" r="25" fill="#ffffff"/>
+    <circle cx="400" cy="250" r="15" fill="#0066cc"/>
+    <circle cx="400" cy="250" r="10" fill="#ffffff" opacity="0.5"/>
+    
+    <!-- Blue nodes -->
+    <circle cx="180" cy="100" r="25" fill="#0066cc" stroke="#ffffff" stroke-width="2">
+      <animate attributeName="r" values="25;27;25" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="100" r="35" fill="url(#pulse)" stroke="#0066cc" stroke-width="1" stroke-dasharray="5,5">
+      <animate attributeName="r" values="35;38;35" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="100" r="15" fill="#ffffff"/>
+    <circle cx="180" cy="100" r="10" fill="#0066cc"/>
+    
+    <circle cx="530" cy="100" r="25" fill="#ffcc00" stroke="#ffffff" stroke-width="2">
+      <animate attributeName="r" values="25;27;25" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="530" cy="100" r="35" fill="url(#pulse)" stroke="#ffcc00" stroke-width="1" stroke-dasharray="5,5">
+      <animate attributeName="r" values="35;38;35" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="530" cy="100" r="15" fill="#ffffff"/>
+    <circle cx="530" cy="100" r="10" fill="#ffcc00"/>
+    
+    <circle cx="530" cy="200" r="25" fill="#0066cc" stroke="#ffffff" stroke-width="2">
+      <animate attributeName="r" values="25;27;25" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="530" cy="200" r="35" fill="url(#pulse)" stroke="#0066cc" stroke-width="1" stroke-dasharray="5,5">
+      <animate attributeName="r" values="35;38;35" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="530" cy="200" r="15" fill="#ffffff"/>
+    <circle cx="530" cy="200" r="10" fill="#0066cc"/>
+    
+    <circle cx="350" cy="380" r="25" fill="#0066cc" stroke="#ffffff" stroke-width="2">
+      <animate attributeName="r" values="25;27;25" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="380" r="35" fill="url(#pulse)" stroke="#0066cc" stroke-width="1" stroke-dasharray="5,5">
+      <animate attributeName="r" values="35;38;35" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="380" r="15" fill="#ffffff"/>
+    <circle cx="350" cy="380" r="10" fill="#0066cc"/>
+    
+    <!-- Orange nodes -->
+    <circle cx="280" cy="120" r="25" fill="#ff9900" stroke="#ffffff" stroke-width="2">
+      <animate attributeName="r" values="25;27;25" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="120" r="35" fill="url(#pulse)" stroke="#ff9900" stroke-width="1" stroke-dasharray="5,5">
+      <animate attributeName="r" values="35;38;35" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="120" r="15" fill="#ffffff"/>
+    <circle cx="280" cy="120" r="10" fill="#ff9900"/>
+    
+    <circle cx="180" cy="200" r="25" fill="#ff9900" stroke="#ffffff" stroke-width="2">
+      <animate attributeName="r" values="25;27;25" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="200" r="35" fill="url(#pulse)" stroke="#ff9900" stroke-width="1" stroke-dasharray="5,5">
+      <animate attributeName="r" values="35;38;35" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="200" r="15" fill="#ffffff"/>
+    <circle cx="180" cy="200" r="10" fill="#ff9900"/>
+    
+    <circle cx="520" cy="350" r="25" fill="#ff9900" stroke="#ffffff" stroke-width="2">
+      <animate attributeName="r" values="25;27;25" dur="3.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="520" cy="350" r="35" fill="url(#pulse)" stroke="#ff9900" stroke-width="1" stroke-dasharray="5,5">
+      <animate attributeName="r" values="35;38;35" dur="3.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="520" cy="350" r="15" fill="#ffffff"/>
+    <circle cx="520" cy="350" r="10" fill="#ff9900"/>
+    
+    <!-- Green nodes -->
+    <circle cx="150" cy="300" r="25" fill="#00cc66" stroke="#ffffff" stroke-width="2">
+      <animate attributeName="r" values="25;27;25" dur="3.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="300" r="35" fill="url(#pulse)" stroke="#00cc66" stroke-width="1" stroke-dasharray="5,5">
+      <animate attributeName="r" values="35;38;35" dur="3.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="300" r="15" fill="#ffffff"/>
+    <circle cx="150" cy="300" r="10" fill="#00cc66"/>
+    
+    <circle cx="630" cy="280" r="25" fill="#00cc66" stroke="#ffffff" stroke-width="2">
+      <animate attributeName="r" values="25;27;25" dur="2.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="630" cy="280" r="35" fill="url(#pulse)" stroke="#00cc66" stroke-width="1" stroke-dasharray="5,5">
+      <animate attributeName="r" values="35;38;35" dur="2.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="630" cy="280" r="15" fill="#ffffff"/>
+    <circle cx="630" cy="280" r="10" fill="#00cc66"/>
+  </g>
+  
+  <!-- Small decorative circles -->
+  <g id="decorative">
+    <circle cx="220" cy="150" r="5" fill="none" stroke="#00cc66" stroke-width="1">
+      <animate attributeName="r" values="5;7;5" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="200" r="5" fill="none" stroke="#0066cc" stroke-width="1">
+      <animate attributeName="r" values="5;7;5" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="450" cy="150" r="5" fill="none" stroke="#0066cc" stroke-width="1">
+      <animate attributeName="r" values="5;7;5" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="480" cy="300" r="5" fill="none" stroke="#ff9900" stroke-width="1">
+      <animate attributeName="r" values="5;7;5" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="250" cy="320" r="5" fill="none" stroke="#00cc66" stroke-width="1">
+      <animate attributeName="r" values="5;7;5" dur="3.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="550" cy="250" r="5" fill="none" stroke="#ffcc00" stroke-width="1">
+      <animate attributeName="r" values="5;7;5" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
