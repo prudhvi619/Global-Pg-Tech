@@ -108,7 +108,7 @@ export default function OurCommitment() {
           </div>
 
           {/* Tablet layout - circle at top */}
-          <div className="md:hidden flex justify-center mb-10">
+          <div className="md:hidden justify-center mb-10">
             <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-full bg-white border-4 sm:border-8 border-[#073E82] flex flex-col items-center justify-center text-center">
               <div className="text-[#0066DB] font-semibold text-xl sm:text-2xl">OUR</div>
               <div className="text-[#0066DB] font-semibold text-xl sm:text-2xl">COMMITMENT</div>
