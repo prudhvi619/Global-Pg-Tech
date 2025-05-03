@@ -1,4 +1,4 @@
-import Target from "@/assets/icons/Archery.svg?react";
+import Target from "@/assets/icons/archery.svg?react";
 import Laptop from "@/assets/icons/laptop.svg?react";
 import Headphones from "@/assets/icons/headset.svg?react";
 import Globe from "@/assets/icons/globe.svg?react";
