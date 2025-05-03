@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import StatDesign from "@/assets/images/stat-design.svg?react";
-import Launch from "@/assets/images/Launch.svg?react";
+import Launch from "@/assets/images/launch.svg?react";
 import Suitcase from "@/assets/images/suitcase.svg?react";
 import CountUp from "react-countup";
 

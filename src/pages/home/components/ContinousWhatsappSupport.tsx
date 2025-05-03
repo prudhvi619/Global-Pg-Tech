@@ -1,4 +1,4 @@
-import { prudhviWhatsappDetails } from "@/utilities/constants/UserCreds";
+import { prudhviWhatsappDetails } from "@/utilities/constants/UserCreds.ts";
 import { sendWhatsappMessage } from "@/utilities/helpers/sendWhatsappMessage";
 import Whatsapp from "@/assets/icons/whatsapp.svg?react";
 

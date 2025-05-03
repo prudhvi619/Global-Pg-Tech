@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Quote from "@/assets/images/Quote.svg?react";
+import Quote from "@/assets/images/quote.svg?react";
 
 const reviews = [
   {
