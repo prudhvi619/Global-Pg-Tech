@@ -6,7 +6,7 @@ import Google from "@/assets/icons/google.svg?react";
 import Microsoft from "@/assets/icons/microsoft.svg?react";
 import Attlasian from "@/assets/icons/attlasian.svg?react";
 import Pepsi from "@/assets/icons/pepsi-co.svg?react";
-import P_G from "@/assets/icons/PG.svg?react";
+import P_G from "@/assets/icons/pg.svg?react";
 import { useEffect } from "react";
 
 export default function YourPathOurGuidance() {
