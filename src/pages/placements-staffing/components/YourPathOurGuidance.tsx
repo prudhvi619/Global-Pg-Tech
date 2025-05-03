@@ -1,12 +1,12 @@
 import Amazon from "@/assets/icons/amazon.svg?react";
 import Apple from "@/assets/icons/apple.svg?react";
 import Facebook from "@/assets/icons/facebook.svg?react";
-import GE from "@/assets/icons/ge.svg?react";
+import GE from "@/assets/icons/g_and_e.svg?react";
 import Google from "@/assets/icons/google.svg?react";
 import Microsoft from "@/assets/icons/microsoft.svg?react";
 import Attlasian from "@/assets/icons/attlasian.svg?react";
 import Pepsi from "@/assets/icons/pepsi-co.svg?react";
-import P_G from "@/assets/icons/pg.svg?react";
+import P_G from "@/assets/icons/p_and_g.svg?react";
 import { useEffect } from "react";
 
 export default function YourPathOurGuidance() {
